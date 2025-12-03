@@ -3,7 +3,7 @@ FROM nvidia/cuda:13.0.2-base-ubuntu22.04
 RUN apt-get update -y \
     && apt-get install -y python3-pip
 
-RUN ldconfig /usr/local/cuda-12.1/compat/
+RUN ldconfig /usr/local/cuda-13.0/compat/
 
 # Install Python dependencies
 COPY builder/requirements.txt /requirements.txt
